@@ -1,0 +1,9 @@
+document.getElementById('formulario').addEventListener('submit', function(event) {
+    event.preventDefault();
+    if (document.getElementById('formulario').checkValidity()) {
+        document.getElementById('botonform').innerText = '¡Gracias!';
+      setTimeout(function() {
+        document.getElementById('formulario').submit();
+      }, 2000);
+    }
+  });
